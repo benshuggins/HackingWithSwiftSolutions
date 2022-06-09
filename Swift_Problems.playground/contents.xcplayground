@@ -3,5 +3,6 @@
     <pages>
         <page name='49SumTheEvenRepeats'/>
         <page name='50CountTheLargestRange'/>
+        <page name='New Problem'/>
     </pages>
 </playground>
