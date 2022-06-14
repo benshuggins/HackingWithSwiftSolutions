@@ -3,6 +3,8 @@
     <pages>
         <page name='49SumTheEvenRepeats'/>
         <page name='50CountTheLargestRange'/>
-        <page name='New Problem'/>
+        <page name='LinkedList'/>
+        <page name='Second New Page'/>
+        <page name='PascalsTriangle - Interview'/>
     </pages>
 </playground>

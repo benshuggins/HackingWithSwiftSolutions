@@ -19,22 +19,35 @@ var greeting = "Hello, playground"
 // The trick to this problem is using NSCounted set which counts the items not added to itself. You can get these items by calling NSCountedSet.count(for: )
 
 
-func challenge49(_ arrValues: Int...) -> Int? {
-    let countedSet = NSCountedSet(array: arrValues)
-    var sum = 0
-    
-    for case let item as Int in countedSet {
-        
-        if countedSet.count(for: item) % 2 == 0 {
-            sum += item
-        }
-    }
-    return sum
-}
-challenge49(1, 2, 2, 3, 3, 4)
-challenge49(5, 5, 5, 12, 12)
-challenge49(1, 1, 2, 2, 3, 3, 4, 4)
 
+
+
+
+
+
+
+
+
+
+
+
+
+//func challenge49(_ arrValues: Int...) -> Int? {
+//    let countedSet = NSCountedSet(array: arrValues)
+//    var sum = 0
+//
+//    for case let item as Int in countedSet {
+//
+//        if countedSet.count(for: item) % 2 == 0 {
+//            sum += item
+//        }
+//    }
+//    return sum
+//}
+//challenge49(1, 2, 2, 3, 3, 4)
+//challenge49(5, 5, 5, 12, 12)
+//challenge49(1, 1, 2, 2, 3, 3, 4, 4)
+//
 
 
 
@@ -53,3 +66,11 @@ challenge49(1, 1, 2, 2, 3, 3, 4, 4)
 //}
 //
 //challenge49A(1, 2, 2, 3, 3, 4)
+
+
+
+
+
+
+
+
