@@ -5,6 +5,9 @@
         <page name='50CountTheLargestRange'/>
         <page name='LinkedList'/>
         <page name='Second New Page'/>
-        <page name='PascalsTriangle - Interview'/>
+        <page name='Graphs - RW'/>
+        <page name='NumberIslands - Google Interview'/>
+        <page name='PascalsTriangle - Google Interview'/>
+        <page name='Leetcode 217 ContainsDuplicate'/>
     </pages>
 </playground>
