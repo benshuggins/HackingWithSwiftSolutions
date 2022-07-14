@@ -9,5 +9,6 @@
         <page name='NumberIslands - Google Interview'/>
         <page name='PascalsTriangle - Google Interview'/>
         <page name='Leetcode 217 ContainsDuplicate'/>
+        <page name='Leetcode 219 Contains Duplicate 2'/>
     </pages>
 </playground>
