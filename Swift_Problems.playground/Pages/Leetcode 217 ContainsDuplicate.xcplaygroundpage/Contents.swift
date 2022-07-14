@@ -23,13 +23,13 @@ import Foundation
 
 // First Soltution
 
-//class Solution {
-//    func containsDuplicate(_ nums: [Int]) -> Bool {
-//        return Set(nums).count != nums.count
-//    }
-//}
-//
-//let answer = Solution().containsDuplicate([1,2,3,1])
+class Solution {
+    func containsDuplicate(_ nums: [Int]) -> Bool {
+        return Set(nums).count != nums.count
+    }
+}
+
+let answer = Solution().containsDuplicate([1,2,3,1])
 
 
 // Second Solution can use a dictionary. We convert the array to a dictionary of type [(key) Array items : (value) index of array Items]. We check to see if there is already a value inside the dictionary that matches the item we are checking in the array. If there is a duplicate then return true.
