@@ -20,52 +20,40 @@ var greeting = "Hello, playground"
 
 
 
+func challenge49(_ arrValues: Int...) -> Int? {
+    let countedSet = NSCountedSet(array: arrValues)
+    var sum = 0
+
+    for case let item as Int in countedSet {
+
+        if countedSet.count(for: item) % 2 == 0 {
+            sum += item
+        }
+    }
+    return sum
+}
+challenge49(1, 2, 2, 3, 3, 4)
+challenge49(5, 5, 5, 12, 12)
+challenge49(1, 1, 2, 2, 3, 3, 4, 4)
 
 
 
 
+ //This is wrong it just sums the even repeats
 
+func challenge49A(_ arrValues: Int...) -> Int? {
+    print(arrValues)
+    var itemsToAdd = [Int]()
+    for items in arrValues {
+        if items % 2 == 0 {
+            itemsToAdd.append(items)
+    }
+}
+    return itemsToAdd.reduce(0, +)
 
+}
 
-
-
-
-
-
-//func challenge49(_ arrValues: Int...) -> Int? {
-//    let countedSet = NSCountedSet(array: arrValues)
-//    var sum = 0
-//
-//    for case let item as Int in countedSet {
-//
-//        if countedSet.count(for: item) % 2 == 0 {
-//            sum += item
-//        }
-//    }
-//    return sum
-//}
-//challenge49(1, 2, 2, 3, 3, 4)
-//challenge49(5, 5, 5, 12, 12)
-//challenge49(1, 1, 2, 2, 3, 3, 4, 4)
-//
-
-
-
-// This is wrong it just sums the even repeats
-//
-//func challenge49A(_ arrValues: Int...) -> Int? {
-//    print(arrValues)
-//    var itemsToAdd = [Int]()
-//    for items in arrValues {
-//        if items % 2 == 0 {
-//            itemsToAdd.append(items)
-//    }
-//}
-//    return itemsToAdd.reduce(0, +)
-//
-//}
-//
-//challenge49A(1, 2, 2, 3, 3, 4)
+challenge49A(1, 2, 2, 3, 3, 4)
 
 
 

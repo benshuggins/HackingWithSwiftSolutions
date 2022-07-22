@@ -4,11 +4,14 @@
         <page name='49SumTheEvenRepeats'/>
         <page name='50CountTheLargestRange'/>
         <page name='LinkedList'/>
-        <page name='Second New Page'/>
         <page name='Graphs - RW'/>
         <page name='NumberIslands - Google Interview'/>
         <page name='PascalsTriangle - Google Interview'/>
         <page name='Leetcode 217 ContainsDuplicate'/>
         <page name='Leetcode 219 Contains Duplicate 2'/>
+        <page name='LeetCode 1 - TwoSum'/>
+        <page name='Leetcode 15 3Sum'/>
+        <page name='Binary Search '/>
+        <page name='LeetCode 9 PalindroneNumber'/>
     </pages>
 </playground>
