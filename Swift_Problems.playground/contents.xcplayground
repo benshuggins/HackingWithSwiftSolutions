@@ -9,9 +9,14 @@
         <page name='PascalsTriangle - Google Interview'/>
         <page name='Leetcode 217 ContainsDuplicate'/>
         <page name='Leetcode 219 Contains Duplicate 2'/>
+        <page name='LeetCode 220 ContainsDuplicate3'/>
         <page name='LeetCode 1 - TwoSum'/>
         <page name='Leetcode 15 3Sum'/>
         <page name='Binary Search '/>
         <page name='LeetCode 9 PalindroneNumber'/>
+        <page name='Leetcode 500- Keyboard Row-E'/>
+        <page name='Leetcode 1002- Find Comon Char-E'/>
+        <page name='LeetCode 350 - Intersection -E'/>
+        <page name='MostCommonElementArray'/>
     </pages>
 </playground>

@@ -12,7 +12,7 @@ var greeting = "Hello, playground"
 //
 //You can return the answer in any order. This answer is to slow
 // Brute force O(n^2)
-//
+// Too slow to be accepted its slower than linear
 class Solution1 {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
 
@@ -242,7 +242,7 @@ class Solution8 {
         
             let compliment = target - item // this is
             
-            if let j = map[compliment] {
+            if let j = map[compliment] {  // if this exists in dictionary
                 return [index, j]
             }
             
@@ -257,7 +257,7 @@ class Solution8 {
 print(Solution8().twoSum4([3,2,4], 6))
 
 
-// This solution doesn't use enumerated.
+// This solution doesn't use enumerated. Its faster than 99.9% of all other solutions only C++ dict can beat it.
 
 class Solution9 {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
@@ -280,9 +280,11 @@ class Solution9 {
     }
 }
 
-let answer = Solution9().twoSum([1,2,5,7,8], 20)
+let answer = Solution9().twoSum([1,2,5,7,8], 8)
 
 
+
+// Dude when I installed the LS motor in the cutlass, my job was a diagnostic electrical mechanic at Toyota Specialty Group and I still found it very difficult. 
 
 
 

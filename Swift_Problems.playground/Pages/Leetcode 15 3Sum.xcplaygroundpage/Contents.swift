@@ -19,24 +19,57 @@ var greeting = "Hello, playground"
 //Notice that the order of the output and the order of the triplets does not matter.
 
 
+//
+//Input: nums = [-1,0,1,2,-1,-4]
+//Output: [[-1,-1,2],[-1,0,1]]
+//Explanation:
+//nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
+//nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
+//nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
+//The distinct triplets are [-1,0,1] and [-1,-1,2].
+//Notice that the order of the output and the order of the triplets does not matter.
+//Example 2:
+//
+//Input: nums = [0,1,1]
+//Output: []
+//Explanation: The only possible triplet does not sum up to 0.
+//Example 3:
+//
+//Input: nums = [0,0,0]
+//Output: [[0,0,0]]
+//Explanation: The only possible triplet sums up to 0.
+
+
 //BENS NOTES ON THE PROBLEM:
 // OUR TARGET SUM IS 0
 
 // we could check if 2 items added together equals 0 and then we could see if the third item also add to 0, so check 2 first .
 
+// Find 3 numbers in the array that when added together equal 0.
+
+// !! You cant check 2 at a time because they might not need to equal 0 for instance -1+-1 = -2 and a third + 2 would equal 0. You have to check 3 at a time!! So the compliment is checked after the first 2 have been added together
+
+// Find a compliment that when added to the first two equals 0 .
+
 //class Solution {
 //    func threeSum(_ nums: [Int]) -> [Int] {
 //        
-//       var dict = [Int:Int]()   //[index: item]
+//        guard nums.count >= 3 else { return [] }
 //        
-//        for (i, n) in nums.enumerated() {
+//        
+//        for i in nums {
+//            var i = i
+//            var j = i+1
+//            var k = j+1
 //            
-//            print("i: \(i), n: \(n)")
 //            
-//            if nums[i] + nums[i+1]
-//            
-//            dict[i] = n
-//            print("dict: ", dict)
+//            if nums[i] + nums[j] + nums[k] == 0 && i != j, i != k, j != k  {
+//                return [nums[i], nums[j], nums[k]]
+//                
+//            } else {
+//                return []
+//            }
+//          
 //            
 //        }
 //        return []
