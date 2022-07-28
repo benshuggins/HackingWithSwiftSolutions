@@ -66,6 +66,8 @@ var greeting = "Hello, playground"
 //
 
 
+// The solution uses 
+
 
 class Solution {
     func findWords()  {

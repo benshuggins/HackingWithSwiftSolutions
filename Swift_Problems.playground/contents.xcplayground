@@ -18,5 +18,7 @@
         <page name='Leetcode 1002- Find Comon Char-E'/>
         <page name='LeetCode 350 - Intersection -E'/>
         <page name='MostCommonElementArray'/>
+        <page name='Leetcode 70-Climbing Stairs-E'/>
+        <page name='LeetCode- Fibonacci-E'/>
     </pages>
 </playground>
