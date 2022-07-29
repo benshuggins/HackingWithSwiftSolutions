@@ -38,25 +38,54 @@ var greeting = "Hello, playground"
 //F(n) = F(n - 1) + F(n - 2), for n > 1.
 
 
-// we add the first + second numbers
+// we add the first + second numbers, and we want the first and second variables to move down the line and
 
 
-    func fib(_ numSteps: Int) -> [Int] {
+
+
+func fib(_ numSteps: Int) -> Int {
         
         var sequence = [0,1] // the start of the sequence
-        
         if numSteps <= 1 {
-            return sequence
+            return sequence.last!
         }
         
-        for _ in 0...numSteps {
-            let first = sequence[sequence.count-2]
+        for _ in 0...numSteps - 2 {
+            let first = sequence[sequence.count-2]  // this gives us second value from the end
             let second = sequence.last!
             sequence.append(first + second)
         }
-        
-        return sequence
+    
+    return sequence.last!
    
     }
 
-fib(1)
+fib(4)
+
+// Remember that we start it off with [0,1]
+
+// we reduce numSteps by one each iteration because we have "used up" those steps, it counts down until it gets to zero steps and then it returns [] thus exiting the function.
+
+// As it iterates and "moves down the line", the first variable becomes the second and the second is first + second
+
+func fibRecursion(_ numSteps: Int, first: Int, second: Int) -> [Int] {
+    if numSteps == 0 {
+       // print("Got to zero steps")
+        return []
+    }
+   // print("first", first)
+    //print("second", second)
+   // print("numSteps: ", numSteps)
+   // print("total: ", [first + second])// + fibRecursion(numSteps - 1, first: second, second: first + second))
+    print(first, second)
+    return [first + second] + fibRecursion(numSteps - 1, first: second, second: first + second)
+    
+}
+
+ [0,1] + fibRecursion(9, first: 0, second: 1)
+
+//fib(6)
+
+// I read that when you break your pelvis, its possible that other vital organs can be punctured. I think you are extremely lucky that didn't happen and that you have full control of your lower body. It's amazing what the human body can heal from and adapt to. Time heals all wounds, you will get there dude. Easier said than done, but stay positive we are all rooting for you.
+
+
