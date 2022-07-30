@@ -86,6 +86,6 @@ func fibRecursion(_ numSteps: Int, first: Int, second: Int) -> [Int] {
 
 //fib(6)
 
-// I read that when you break your pelvis, its possible that other vital organs can be punctured. I think you are extremely lucky that didn't happen and that you have full control of your lower body. It's amazing what the human body can heal from and adapt to. Time heals all wounds, you will get there dude. Easier said than done, but stay positive we are all rooting for you.
+// Time heals all wounds. Easier said than done, but stay positive.
 
 

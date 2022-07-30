@@ -20,5 +20,9 @@
         <page name='MostCommonElementArray'/>
         <page name='Leetcode 70-Climbing Stairs-E'/>
         <page name='LeetCode 509- Fibonacci-E'/>
+        <page name='Binary Trees'/>
+        <page name='Trees'/>
+        <page name='Leetcode 242- Anagram- E'/>
+        <page name='SWIFT PATTERN NOTES'/>
     </pages>
 </playground>
