@@ -34,7 +34,9 @@ import Foundation
 // This is the least amount of code
 // Sort both arrays and then compare them
 
- 
+// This is the 1 liner:
+
+
 class Solution2 {
         func isAnagram(_ s: String, _ t: String) -> Bool {
             
@@ -46,18 +48,9 @@ class Solution2 {
 
   //  Solution2().isAnagram("rat", "car")
 
-var students = ["Ben", "Ivy", "Jordell", "Maxime"]
-if let i = students.firstIndex(of: "Maxime") {
-    students[i] = "Max"
-}
-print(students)
-// Prints "["Ben", "Ivy", "Jordell", "Max"]"
-
-
 // SOLUTION 2 
 
-//You could write a naïve solution to this problem by taking a variable copy of the second input string, then looping over the first string and checking each letter exists in the second. If it does, remove it so it won’t be counted again; if not, return false. If you get to the end of the first string, then return true if the second string copy is now empty, otherwise return false.
-
+// Here we are going to create a checkstring from one of the inputs and then loop over the second input and using firstIndex(of:) check if that letter exists in the checkString if it doesn't then we want to return false immediately, otherwise we want to remove that letter from
 
 func challenge3a(string1: String, string2: String) -> Bool {
    var checkString = string2
@@ -70,3 +63,89 @@ func challenge3a(string1: String, string2: String) -> Bool {
 }
    return checkString.count == 0
 }
+
+
+// SOLUTION 3 -> USE HASHMAPS
+
+
+    func isAnagram(_ s: String, _ t: String) -> Bool {
+        guard s.count == t.count else { return false }
+
+        var map: [Character: Int] = [:] // we have the same dictionary for both s and t
+
+        s.forEach({ map[$0, default: 0] += 1 })
+        print("map s: ", map)
+        t.forEach({ map[$0, default: 0] -= 1 })
+        print("map t: ", map)
+        return map.filter({ $0.value != 0 }).count == 0 // if every value doesn't equal 0 then its not true
+    }
+
+//isAnagram("anagram", "nagaram")
+
+
+
+class Solution5 {
+    func isAnagram(_ s: String, _ t: String) -> Bool {
+        
+        var dictS: [Character: Int] = [:]
+        s.forEach { (c) in
+            dictS[c, default: 0] += 1
+        }
+        
+        var dictT: [Character: Int] = [:]
+        t.forEach { (c) in
+            dictT[c, default: 0] += 1
+        }
+        
+        return dictS == dictT
+    }
+}
+
+//print(Solution5().isAnagram("anagram", "nagaram"))
+
+
+
+
+    func isAnagram3(_ s: String, _ t: String) -> Bool {
+        
+        var sDictionary = [Character: Int]() // key: the character, value: the count
+        for sChar in s {
+            let count = sDictionary[sChar, default: 0] // make dictionary
+            sDictionary[sChar] = count + 1
+            print("sDictionary", sDictionary)
+        }
+        
+        for tChar in t {
+            let count = sDictionary[tChar, default: 0]
+            sDictionary[tChar] = count - 1
+        }
+        
+        return sDictionary.values.filter({ $0 != 0 }).isEmpty
+    }
+//isAnagram3("anagram", "nagaram")
+
+
+// there is only 1 hashmap
+
+func isAnagram4(_ s: String) -> Bool {
+    // there is no Int value for a string we havent enumerated or anyting so it just takes the default which is 0 so every Character is assigned 0
+    
+    var sDictionary = [Character: Int]() // key: the character, value: the count
+    for sChar in s {
+        let count = sDictionary[sChar, default: 0] // make dictionary
+        print("count: ", count)
+        print("sDictionaryBefore: ", sDictionary)
+        sDictionary[sChar] = count + 1          // without adding 1 the dictionary
+        print("sDictionaryAfterAdding1: ", sDictionary)
+    }
+    
+//    for tChar in t {
+//        let count = sDictionary[tChar, default: 0]
+//        sDictionary[tChar] = count - 1
+//    }
+    
+    return sDictionary.values.filter({ $0 != 0 }).isEmpty
+}
+isAnagram4("anagram")
+
+// this doessnt make sense because there is a value for each why is it taking the default
