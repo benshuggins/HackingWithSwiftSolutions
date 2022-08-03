@@ -131,6 +131,28 @@ func groupAnagrams3(_ strs: [String]) -> [[String]] {
     
 }
 
-groupAnagrams3(["eat","tea","tan","ate","nat","bat"])
+//groupAnagrams3(["eat","tea","tan","ate","nat","bat"])
 
 
+
+
+
+    func groupAnagrams4(_ strs: [String]) -> [[String]] {
+        guard strs.count > 0 else {
+            return [[String]]()
+        }
+        
+        var hash = [String: [String]]()
+        
+        for str in strs {
+            let key = String(str.sorted())
+            hash[key, default:[String]()].append(str)
+        }
+        print(Array(hash.values))
+        return Array(hash.values)
+        
+        
+    }
+
+
+groupAnagrams4(["eat","tea","tan","ate","nat","bat"])

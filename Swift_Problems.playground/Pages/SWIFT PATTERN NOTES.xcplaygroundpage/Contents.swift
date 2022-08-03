@@ -37,7 +37,7 @@ print(students)  //["Ben", "Ivy", "Jordell", "Max"]
 
 
 // A 5th Pattern to note would be using grouping by dictionaries for instance:
-let dictionary = Dictionary(grouping: strs, by: {String($0).sorted()}) // group by characters that are in sorted order.
+//let dictionary = Dictionary(grouping: strs, by: {String($0).sorted()}) // group by characters that are in sorted order.
 
 // This sorts them by: sorted character, this is what the dictionary prints:
 
