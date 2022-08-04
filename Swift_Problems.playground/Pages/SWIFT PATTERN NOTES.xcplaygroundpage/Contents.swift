@@ -14,7 +14,7 @@ if let i = students.firstIndex(of: "Maxime") {
 }
 print(students)  //["Ben", "Ivy", "Jordell", "Max"]
 
-// If the item is not found then nil if returned for instance if I changed Maxime to Max then the array would remain the same or: ["Ben", "Ivy", "Jordell", "Maxime"] because Maxime was unable to be found. 
+// If the item is not found then nil. if I returned for instance if I changed Maxime to Max then the array would remain the same or: ["Ben", "Ivy", "Jordell", "Maxime"] because Maxime was unable to be found. 
 
 
 // THE THIRD PATTERN IS USING CONVERTING AN ARRAY TO A DICTIONARY AND CHECKING IF IT EXISTS WITH

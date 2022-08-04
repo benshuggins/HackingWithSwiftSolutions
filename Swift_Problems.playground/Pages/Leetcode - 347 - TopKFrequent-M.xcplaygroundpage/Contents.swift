@@ -58,6 +58,8 @@ topKFrequent([1,1,1,2,2,3], 2)
 //THIS IS THE ANSWER 
 
 
+// The idea is to create a dictionary from the array of 1's and then and then add them up to so that we have the [item: Frequency] then sort them and return the first k elements using prefix!!
+
 
 func topKFrequent2(_ nums: [Int], _ k: Int) -> [Int] {
    // var dict = [Int: Int]()
