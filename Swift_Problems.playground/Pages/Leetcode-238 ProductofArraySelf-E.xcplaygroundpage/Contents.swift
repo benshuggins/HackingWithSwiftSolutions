@@ -65,12 +65,12 @@ class Solution {
 //print(Solution().productExceptSelf([1,2,3,4]))
 
 
-
+// Rachelle I met someone. I want you to stop calling me at night, you are bothering me. 
 
 
 class Solution3 {
     func productExceptSelf(_ nums: [Int]) -> [Int] {
-                guard nums.count > 1 else {
+     guard nums.count > 1 else {
             return []
         }
 
@@ -89,7 +89,7 @@ class Solution3 {
         for i in (0..<nums.count).reversed() {
             print("i: ", i)
             print("product: ", product)
-            result[i] *= product      //[24X1=24 ,12X1=12 ,4x2=8, 6x1=6]
+            result[i] *= product      //[24X1=24 ,12X1=12 ,4x2=8, 236x1=6]
             product *= nums[i]    // p = 12
             print("result: ", result)
         }
@@ -97,4 +97,5 @@ class Solution3 {
     }
 }
 print(Solution3().productExceptSelf([1,2,3,4]))
+
 

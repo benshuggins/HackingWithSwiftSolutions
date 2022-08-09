@@ -25,9 +25,11 @@
         <page name='Leetcode 242- Anagram- E'/>
         <page name='LeetCode 49- Group Anagrams-M'/>
         <page name='Leetcode - 347 - TopKFrequent-M'/>
-        <page name='Leet- 128 LongestConsecutiveSequence'/>
-        <page name='SWIFT PATTERN NOTES'/>
         <page name='Leetcode-238 ProductofArraySelf-E'/>
+        <page name='Leet- 128 LongestConsecutiveSequence'/>
         <page name='Leetcode-?-MaxProfit-E'/>
+        <page name='Lintcode-659-EncodeDecodeStrings'/>
+        <page name='HWS-13-RunLengthEncoding '/>
+        <page name='SWIFT PATTERN NOTES'/>
     </pages>
 </playground>
