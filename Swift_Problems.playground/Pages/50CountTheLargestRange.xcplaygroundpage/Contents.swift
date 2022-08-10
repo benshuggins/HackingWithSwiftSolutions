@@ -11,13 +11,13 @@ var greeting = "Hello, playground"
 //• The array [10, 20, 30, -10, -20, 10, 20] should return 0...2. • The array [1, -1, 2, -1] should return 2...2.
 //• The array [2, 0, 2, 0, 2] should return 0...0.
 //• The array [Int]() should return nil.
-
-func contiguousSum(_ arrValues; [Int])-> CountableClosedRange<Int>? {
-    
-    
-    
-    
-    
-    return 4...6
-}
-contiguousSum([0, 1, 1, -1, 2, 3, 1])
+//
+//func contiguousSum(_ arrValues; [Int])-> CountableClosedRange<Int>? {
+//    
+//    
+//    
+//    
+//    
+//    return 4...6
+//}
+//contiguousSum([0, 1, 1, -1, 2, 3, 1])

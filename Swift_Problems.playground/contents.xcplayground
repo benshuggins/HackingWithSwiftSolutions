@@ -3,9 +3,7 @@
     <pages>
         <page name='49SumTheEvenRepeats'/>
         <page name='50CountTheLargestRange'/>
-        <page name='LinkedList'/>
         <page name='Graphs - RW'/>
-        <page name='NumberIslands - Google Interview'/>
         <page name='PascalsTriangle - Google Interview'/>
         <page name='Leetcode 217 ContainsDuplicate'/>
         <page name='Leetcode 219 Contains Duplicate 2'/>
@@ -27,8 +25,8 @@
         <page name='Leetcode - 347 - TopKFrequent-M'/>
         <page name='Leetcode-238 ProductofArraySelf-E'/>
         <page name='Leet- 128 LongestConsecutiveSequence'/>
-        <page name='Leetcode-?-MaxProfit-E'/>
         <page name='Lintcode-659-EncodeDecodeStrings'/>
+        <page name='Leetcode-125 Valid Paliindrone'/>
         <page name='HWS-13-RunLengthEncoding '/>
         <page name='SWIFT PATTERN NOTES'/>
     </pages>

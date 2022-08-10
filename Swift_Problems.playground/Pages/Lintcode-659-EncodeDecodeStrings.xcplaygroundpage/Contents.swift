@@ -3,6 +3,8 @@ import Foundation
 
 var greeting = "Hello, playground"
 
+//https://www.lintcode.com/problem/659/
+
 
 //Description
 //Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
@@ -71,7 +73,7 @@ public class Solution {
                 print("i (2): ", i)
                 print("j : ", j)
                 results.append(actualWord)
-                i = j + 1 + lengthOfWord // this moves i "up to next word"
+                i = j + 1 + lengthOfWord // this moves i "up to next word", add 1 to step over the counter
                 print(" i = j + 1 + lengthOfWord: ", i)
             }
 
@@ -89,6 +91,8 @@ print(Solution().decode("2#we3#say1#:3#yes"))
 // Count, Symbol, Letter
 
 // We have 2 pointers i and j. We move j forward
+
+// complete Leetcode problem # 394 
 
 
 

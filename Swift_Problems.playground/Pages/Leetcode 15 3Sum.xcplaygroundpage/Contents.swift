@@ -51,29 +51,59 @@ var greeting = "Hello, playground"
 
 // Find a compliment that when added to the first two equals 0 .
 
-//class Solution {
-//    func threeSum(_ nums: [Int]) -> [Int] {
-//        
-//        guard nums.count >= 3 else { return [] }
-//        
-//        
-//        for i in nums {
-//            var i = i
-//            var j = i+1
-//            var k = j+1
-//            
-//            
+
+//////////////////
+////// We have 3 subscripts when added together all equal 0
+///i != j, i != k, and j != k
+/// But
+
+///
+/// Rule #1 is that all subscrpts have to be unique
+/// Rule #2 nums[i] + nums[j] + nums[k] == 0
+///
+/// 
+
+// let negatives = array.filter { $0 < 0 }
+
+class Solution {
+    func threeSum(_ nums: [Int]) -> [Int] {
+        
+        guard nums.count >= 3 else { return [] }
+        
+        let negatives = nums.filter { $0 < 0 }
+        let positives = nums.filter {$0 >= 0 }
+       // var result = Array<Any>()
+        print("negatives: ", negatives)
+        print("positives: ", positives)
+        
+        
+        for i in nums {
+            if negatives[i] + negatives[i+1] + positives[i] == 0 {
+                print("[negatives[i], negatives[i+1], positives[i]]")
+            }
+      
+            
+        }
+        
+        
+        return []
+    }
+}
+
+print(Solution().threeSum([-1,0,1,2,-1,-4]))
+
+
+
+
+
+
+
+
+
+//
 //            if nums[i] + nums[j] + nums[k] == 0 && i != j, i != k, j != k  {
 //                return [nums[i], nums[j], nums[k]]
-//                
+//
 //            } else {
 //                return []
 //            }
-//          
-//            
-//        }
-//        return []
-//    }
-//}
-//
-//print(Solution().threeSum([-1,0,1,2,-1,-4]))
