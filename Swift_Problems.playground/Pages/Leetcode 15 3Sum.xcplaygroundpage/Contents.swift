@@ -69,6 +69,7 @@ class Solution {
     func threeSum(_ nums: [Int]) -> [Int] {
         
         guard nums.count >= 3 else { return [] }
+   
         
         let negatives = nums.filter { $0 < 0 }
         let positives = nums.filter {$0 >= 0 }
@@ -78,10 +79,13 @@ class Solution {
         
         
         for i in nums {
-            if negatives[i] + negatives[i+1] + positives[i] == 0 {
-                print("[negatives[i], negatives[i+1], positives[i]]")
-            }
-      
+           
+//            if negatives[i] + negatives[i+1] + positives[i] == 0 {
+//               // print("[negatives[i], negatives[i+1], positives[i]]")
+//                print("true")
+//            }
+//            
+         print(i)
             
         }
         

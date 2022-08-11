@@ -219,7 +219,7 @@ class Solution7 {
             print("i: \(i), n: \(n)")
             let diff = target - n        // totalSum - current Item = our compliment
 
-            if let j = map[diff] { // Is there an index in the dictionary that matches our compliment if so then we know that j and i are our two sums added together equal our target
+            if let j = map[diff] { // Is there an index in the dictionary that matches our compliment? if so then we know that j and i are our two sums added together equal our target
             return [i, j]
     }
     map[n] = i // this is what populates our dictionary
