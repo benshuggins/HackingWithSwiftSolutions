@@ -49,7 +49,7 @@ func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
     
     return Array(answer.prefix(k))
 }
-topKFrequent([1,1,1,2,2,3], 2)
+//topKFrequent([1,1,1,2,2,3], 2)
 //topKFrequent([-1,-1], 1)  // should return [-1]
 //topKFrequent([1,2], 2)  // should return [1,2]
 
@@ -62,24 +62,23 @@ topKFrequent([1,1,1,2,2,3], 2)
 
 
 func topKFrequent2(_ nums: [Int], _ k: Int) -> [Int] {
-   // var dict = [Int: Int]()
-//
-//    for value in nums {
-//        dict[value] = (dict[value] ?? 0) + 1
-//    }
-    
-    let mappedItems = nums.map { ($0,1)}
+
+    let mappedItems = nums.map { ($0,1)}   // [item: count]
+    print(mappedItems)
     let dict = Dictionary(mappedItems, uniquingKeysWith: +)
-     print("dict 2: ", dict)
+    print("dict : ", dict)
     
    // return Array(dict.values.sorted().prefix(k))
-    print("final2: ", Array(dict.sorted { $0.value > $1.value }))
+    print("final2: ", Array(dict.sorted { $0.value > $1.value }.prefix(k)))
+    
+    let answer = Array(dict.sorted { $0.value > $1.value }.map {$0.key}.prefix(k))
+    
     return Array(dict.sorted { $0.value > $1.value }.map { $0.key }.prefix(k))
 }
 
 //topKFrequent2([1,2], 2)      // [1,2]
 //topKFrequent2([-1,-1], 1)  // should return [-1]
-topKFrequent2([1,1,1,2,2,3,3], 2)  // [1,2]
+topKFrequent2([1,1,1,2,2,3], 2)  // [1,2]
 
 
 

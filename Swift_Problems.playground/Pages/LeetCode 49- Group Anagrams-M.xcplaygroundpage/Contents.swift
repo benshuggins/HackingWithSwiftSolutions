@@ -66,7 +66,7 @@ func groupAnagrams(_ strs: [String]) -> [[String]] {
         return [[]]
     }
 
-//groupAnagrams(["eat","tea","tan","ate","nat","bat"])
+groupAnagrams(["eat","tea","tan","ate","nat","bat"])
 
 
 
