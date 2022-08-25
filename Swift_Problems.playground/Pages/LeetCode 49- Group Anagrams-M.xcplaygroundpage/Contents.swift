@@ -66,7 +66,7 @@ func groupAnagrams(_ strs: [String]) -> [[String]] {
         return [[]]
     }
 
-groupAnagrams(["eat","tea","tan","ate","nat","bat"])
+//groupAnagrams(["eat","tea","tan","ate","nat","bat"])
 
 
 
@@ -126,14 +126,12 @@ func groupAnagrams3(_ strs: [String]) -> [[String]] {
     let dictionary = Dictionary(grouping: strs, by: {String($0).sorted()}) // group by characters that are in sorted order.
     print(dictionary)
     let arrayOfArrays = Array(dictionary.values)
-   // print(arrayOfArrays)
+    print(arrayOfArrays)
     return arrayOfArrays
-    
+
 }
 
 //groupAnagrams3(["eat","tea","tan","ate","nat","bat"])
-
-
 
 
 
@@ -142,17 +140,26 @@ func groupAnagrams3(_ strs: [String]) -> [[String]] {
             return [[String]]()
         }
         
-        var hash = [String: [String]]()
+        var dictList = [String: [String]]()  // same as defaultdict(list) in python
         
-        for str in strs {
-            let key = String(str.sorted())
-            hash[key, default:[String]()].append(str)
+        for word in strs {
+            let key = String(word.sorted())
+            dictList[key, default:[String]()].append(word) // so the default will just be an empty [String]
         }
-        print(Array(hash.values))
-        return Array(hash.values)
-        
-        
+        print(Array(dictList.values))
+        return Array(dictList.values)
     }
+//groupAnagrams4(["eat","tea","tan","ate","nat","bat"])
 
 
-groupAnagrams4(["eat","tea","tan","ate","nat","bat"])
+func groupAnagrams5(_ strs: [String]) -> [[String]] {
+   
+    let dict = Dictionary(grouping: strs, by: {$0.sorted()})
+   // print(dict)
+    let retArr = Array(dict.values)
+    print(retArr)
+    return [[]]
+    
+}
+
+groupAnagrams5(["eat","tea","tan","ate","nat","bat"])

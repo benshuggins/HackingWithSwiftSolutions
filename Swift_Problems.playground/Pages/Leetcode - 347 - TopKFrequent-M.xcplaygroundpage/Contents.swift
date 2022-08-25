@@ -20,21 +20,6 @@ import Foundation
 //Output: [1]
 
 
-// Thoughts:
-
-// Could I use dictionary grouping?
-// I could sort into an array of arrays and then loop through and count the k highest count of elements
-
-// This is the brute force method
-
-// How to check if values in an array are all the same?
-
-// Is there an answer with NSCountedSet()??
-
-
-// This is the worst failed answer:
-
-
 func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
        if nums.count == 0 {
                   return []
@@ -78,7 +63,7 @@ func topKFrequent2(_ nums: [Int], _ k: Int) -> [Int] {
 
 //topKFrequent2([1,2], 2)      // [1,2]
 //topKFrequent2([-1,-1], 1)  // should return [-1]
-topKFrequent2([1,1,1,2,2,3], 2)  // [1,2]
+//topKFrequent2([1,1,1,2,2,3], 2)  // [1,2]
 
 
 
@@ -145,3 +130,24 @@ topKFrequent2([1,1,1,2,2,3], 2)  // [1,2]
 //
 //
 //
+// Return the most frequent items
+
+//
+
+func topKFrequent44(_ nums: [Int], _ k: Int) -> [Int] {
+
+    let mappedItems = nums.map {($0, 1)}   // [item, 1]
+    print(mappedItems)
+    
+    let dict = Dictionary(mappedItems, uniquingKeysWith: +)
+    
+    print(dict)   //[item: count]
+    
+    // convert back to an array
+    let retArr = Array(dict.sorted {$0.value > $1.value}.map {$0.key}.prefix(k))
+    print(retArr)
+    
+    return retArr
+}
+
+topKFrequent44([1,1,1,2,2,3], 2)  // [1,2]

@@ -65,9 +65,6 @@ class Solution {
 //print(Solution().productExceptSelf([1,2,3,4]))
 
 
-// Rachelle I met someone. I want you to stop calling me at night, you are bothering me. 
-
-
 class Solution3 {
     func productExceptSelf(_ nums: [Int]) -> [Int] {
      guard nums.count > 1 else {
