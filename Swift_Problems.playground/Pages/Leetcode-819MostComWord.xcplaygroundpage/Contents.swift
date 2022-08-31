@@ -39,7 +39,7 @@ func mostCommonWord2(_ paragraph: String, _ banned: [String]) -> String {
         var key = Array(map.keys)
         key = key.sorted(by: {(a, b) in
              return map[a]! > map[b]!
-        })                                  // sort max to the front 
+        })                                  // sort max to the front
         print("key: ", key)
         return key[0]
     }

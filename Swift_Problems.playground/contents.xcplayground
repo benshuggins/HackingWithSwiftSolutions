@@ -31,5 +31,10 @@
         <page name='HWS-13-RunLengthEncoding '/>
         <page name='SWIFT PATTERN NOTES'/>
         <page name='Leetcode-819MostComWord'/>
+        <page name='Leetcode-316 RemoveDupLetters'/>
+        <page name='Leetcode-383 RansomNote'/>
+        <page name='Leetcode-RomanNumeral-13'/>
+        <page name='Leetcode-35 Search Insert '/>
+        <page name='Leetcode 387- uniqueChar'/>
     </pages>
 </playground>
