@@ -22,6 +22,6 @@ var greeting = "Hello, playground"
 
 class Solution {
     func removeDuplicateLetters(_ s: String) -> String {
-        
+        return ""
     }
 }

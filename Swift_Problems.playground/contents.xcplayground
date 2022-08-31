@@ -36,5 +36,8 @@
         <page name='Leetcode-RomanNumeral-13'/>
         <page name='Leetcode-35 Search Insert '/>
         <page name='Leetcode 387- uniqueChar'/>
+        <page name='Leetcode-2351 First LetterX2'/>
+        <page name='Leetcode-27 inout useage'/>
+        <page name='LinkedLists'/>
     </pages>
 </playground>
