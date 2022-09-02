@@ -40,5 +40,6 @@
         <page name='Leetcode-27 inout useage'/>
         <page name='LinkedLists Creation'/>
         <page name='LinkedList-203 Reverse'/>
+        <page name='LinkedList-ReverseLB'/>
     </pages>
 </playground>
