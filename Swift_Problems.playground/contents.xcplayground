@@ -41,5 +41,8 @@
         <page name='LinkedLists Creation'/>
         <page name='LinkedList-203 Reverse'/>
         <page name='LinkedList-ReverseLB'/>
+        <page name='Leet-14-LongestComPrefix'/>
+        <page name='WorkingWithStrings'/>
+        <page name='Leetcode58 - LengthOfLastWord'/>
     </pages>
 </playground>

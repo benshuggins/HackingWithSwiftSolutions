@@ -146,6 +146,28 @@ func isAnagram4(_ s: String) -> Bool {
     
     return sDictionary.values.filter({ $0 != 0 }).isEmpty
 }
-isAnagram4("anagram")
+//isAnagram4("anagram")
 
 // this doessnt make sense because there is a value for each why is it taking the default
+
+
+func isAnagram5(_ s: String, _ t: String) -> Bool {
+           if s.count != t.count {return false}
+
+let sChars = Array(s).map{($0,1)}  // returns characters array as key value pair tuple.
+let sCharCountDict = Dictionary(sChars, uniquingKeysWith: +) // adds all values when a duplicate is encountered.
+print (sCharCountDict)
+
+let tChars = Array(t).map{($0,1)}  // returns characters array as key value pair tuple.
+let tCharCountDict = Dictionary(tChars, uniquingKeysWith: +) // adds all values when a duplicate is encountered.
+
+print (tCharCountDict)
+
+return sCharCountDict == tCharCountDict
+}
+
+isAnagram5("anagram", "nagaram" )
+
+
+//Input: s = "anagram", t = "nagaram"
+//Output: true

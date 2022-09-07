@@ -121,6 +121,7 @@ func groupAnagrams2(_ strs: [String]) -> [[String]] {
 
 // This is the 
 
+
 func groupAnagrams3(_ strs: [String]) -> [[String]] {
    
     let dictionary = Dictionary(grouping: strs, by: {String($0).sorted()}) // group by characters that are in sorted order.
@@ -131,7 +132,7 @@ func groupAnagrams3(_ strs: [String]) -> [[String]] {
 
 }
 
-//groupAnagrams3(["eat","tea","tan","ate","nat","bat"])
+groupAnagrams3(["eat","tea","tan","ate","nat","bat"])
 
 
 
@@ -145,11 +146,12 @@ func groupAnagrams3(_ strs: [String]) -> [[String]] {
         for word in strs {
             let key = String(word.sorted())
             dictList[key, default:[String]()].append(word) // so the default will just be an empty [String]
+            print("dictList: ", dictList)
         }
         print(Array(dictList.values))
         return Array(dictList.values)
     }
-//groupAnagrams4(["eat","tea","tan","ate","nat","bat"])
+groupAnagrams4(["eat","tea","tan","ate","nat","bat"])
 
 
 func groupAnagrams5(_ strs: [String]) -> [[String]] {
@@ -162,4 +164,4 @@ func groupAnagrams5(_ strs: [String]) -> [[String]] {
     
 }
 
-groupAnagrams5(["eat","tea","tan","ate","nat","bat"])
+//groupAnagrams5(["eat","tea","tan","ate","nat","bat"])

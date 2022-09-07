@@ -46,52 +46,27 @@ func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
 // The idea is to create a dictionary from the array of 1's and then and then add them up to so that we have the [item: Frequency] then sort them and return the first k elements using prefix!!
 
 
-func topKFrequent2(_ nums: [Int], _ k: Int) -> [Int] {
-
-    let mappedItems = nums.map { ($0,1)}   // [item: count]
-    print(mappedItems)
-    let dict = Dictionary(mappedItems, uniquingKeysWith: +)
-    print("dict : ", dict)
-    
-   // return Array(dict.values.sorted().prefix(k))
-    print("final2: ", Array(dict.sorted { $0.value > $1.value }.prefix(k)))
-    
-    let answer = Array(dict.sorted { $0.value > $1.value }.map {$0.key}.prefix(k))
-    
-    return Array(dict.sorted { $0.value > $1.value }.map { $0.key }.prefix(k))
-}
-
-//topKFrequent2([1,2], 2)      // [1,2]
-//topKFrequent2([-1,-1], 1)  // should return [-1]
-//topKFrequent2([1,1,1,2,2,3], 2)  // [1,2]
 
 
 
 
+    func topKFrequent2(_ nums: [Int], _ k: Int) -> [Int] {
+        var h = [Int: Int]()   // [value: frequency]
+
+        nums.map { h[$0, default: 0] += 1 }
+        print("h: ", h)
 
 
+        var a = Array(repeating: [Int](), count: nums.count+1) // make an array of arrays with 1 more than entire nums array
+        print("a: ", a)
+        h.map { a[$1].append($0) }
+        print("h: ", h)
+        print(a.flatMap{ $0 }.suffix(k))
+//        return a.flatMap{ $0 }.suffix(k)
+        return []
+    }
 
-
-//
-//    func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
-//        var h = [Int: Int]()   // [value: frequency]
-//
-//        nums.map { h[$0, default: 0] += 1 }
-//        print("h: ", h)
-//
-//
-//        var a = Array(repeating: [Int](), count: nums.count+1) // make an array of arrays with 1 more than entire nums array
-//        print("a: ", a)
-//        h.map { a[$1].append($0) }
-//        print("h: ", h)
-//        print(a.flatMap{ $0 }.suffix(k))
-////        return a.flatMap{ $0 }.suffix(k)
-//        return []
-//    }
-
-
-
-//topKFrequent([1,1,1,2,2,3], 2)
+topKFrequent2([1,1,1,2,2,3], 2)
 
 //func topKFrequent(_ words: [Int], _ k: Int) -> [String] {
 //
@@ -150,4 +125,5 @@ func topKFrequent44(_ nums: [Int], _ k: Int) -> [Int] {
     return retArr
 }
 
-topKFrequent44([1,1,1,2,2,3], 2)  // [1,2]
+//topKFrequent44([1,1,1,2,2,3], 2)  // [1,2]
+

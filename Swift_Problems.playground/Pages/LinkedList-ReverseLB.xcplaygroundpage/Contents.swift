@@ -30,6 +30,8 @@ func printList(head: Node?) {
         currentNode = currentNode?.next
     }
 }
+
+//        print("Prev: \(prev?.value ?? -1), Current: \(currentNode?.value ?? -1), Next: \(next?.value ?? -1) ")
 func reverseLL(head: Node?) -> Node? {
     print("Reversing Linked List")
     var currentNode = head
@@ -38,14 +40,15 @@ func reverseLL(head: Node?) -> Node? {
     print("starting head: ", head?.value ?? "")
     while currentNode != nil {
        
-        nxt = currentNode?.next          // this is a temporary variable
-        print("next: ", nxt?.value ?? "")
-        currentNode?.next = prev // reversal: point back
-//        print("Prev: \(prev?.value ?? -1), Current: \(currentNode?.value ?? -1), Next: \(next?.value ?? -1) ")
-        prev = currentNode
-        print("Prev: ", prev?.value ?? -1)
-        currentNode = nxt
-        print("Current:" , currentNode?.value ?? -1)
+        nxt = currentNode?.next          // this is a temporary variable to store
+        print("nxt: ", nxt?.value ?? "")
+       
+        currentNode?.next = prev // this is what points bach
+
+        prev = currentNode       // move ahead
+        print("prev: ", prev?.value ?? -1)
+        currentNode = nxt       // update current node
+        print("currentNode:" , currentNode?.value ?? -1)
     }
    
     return prev   // this is equal to the new head at end
