@@ -9,25 +9,25 @@ import CoreFoundation
 //
 //A word is a maximal substring consisting of non-space characters only.
 
-// This
-
-class Solution {
-    let timefirst = CFAbsoluteTimeGetCurrent()
-    func lengthOfLastWord(_ s: String) -> Int {
-        guard s.count > 0 else { return 0}
-        let lastWord = s.components(separatedBy: " ")
-        let newWord = lastWord.filter { $0 != ""}
-        let timeSecond = CFAbsoluteTimeGetCurrent()
-        print("time: ", timeSecond - timefirst)
-        return newWord.last!.count
-        
-    }
-}
-print(Solution().lengthOfLastWord("   fly me   to   the moon  "))
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&+++++========================================
+//
+//class Solution {
+//    let timefirst = CFAbsoluteTimeGetCurrent()
+//    func lengthOfLastWord(_ s: String) -> Int {
+//        guard s.count > 0 else { return 0}
+//        let lastWord = s.components(separatedBy: " ")
+//        let newWord = lastWord.filter { $0 != ""}
+//        let timeSecond = CFAbsoluteTimeGetCurrent()
+//        print("time: ", timeSecond - timefirst)
+//        return newWord.last!.count
+//
+//    }
+//}
+//print(Solution().lengthOfLastWord("   fly me   to   the moon  "))
 
 //"   fly me   to   the moon  "
 
-
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&+++++========================================
 
 //Example 1:
 //
@@ -46,24 +46,24 @@ print(Solution().lengthOfLastWord("   fly me   to   the moon  "))
 //Explanation: The last word is "joyboy" with length 6.
 
 
-func lengthOfLastWord2(_ s: String) -> Int {
-    // parameter s is immutable
-    var str = s
-    // drop the whitespaces at the end of the string
-    while str.last == " " {
-        str.removeLast()
-    }
-    // main functionality
-    var len = 0
-    for char in str.reversed(){
-        if char == " " {
-            break
-        }
-        
-        len += 1
-    }
-    return len
-}
-
-
-print(lengthOfLastWord2("   fly me   to   the moon  "))
+//func lengthOfLastWord2(_ s: String) -> Int {
+//    // parameter s is immutable
+//    var str = s
+//    // drop the whitespaces at the end of the string
+//    while str.last == " " {
+//        str.removeLast()
+//    }
+//    // main functionality
+//    var len = 0
+//    for char in str.reversed(){
+//        if char == " " {
+//            break
+//        }
+//        
+//        len += 1
+//    }
+//    return len
+//}
+//
+//
+//print(lengthOfLastWord2("   fly me   to   the moon  "))

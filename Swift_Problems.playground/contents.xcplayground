@@ -44,5 +44,6 @@
         <page name='Leet-14-LongestComPrefix'/>
         <page name='WorkingWithStrings'/>
         <page name='Leetcode58 - LengthOfLastWord'/>
+        <page name='Leetcode1678-GoalParser'/>
     </pages>
 </playground>
