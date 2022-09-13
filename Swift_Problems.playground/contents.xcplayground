@@ -27,7 +27,7 @@
         <page name='Leetcode-238 ProductofArraySelf-E'/>
         <page name='Leet- 128 LongestConsecutiveSequence'/>
         <page name='Lintcode-659-EncodeDecodeStrings'/>
-        <page name='Leetcode-125 Valid Paliindrone'/>
+        <page name='Leetcode-125 Valid Palindrone'/>
         <page name='HWS-13-RunLengthEncoding '/>
         <page name='SWIFT PATTERN NOTES'/>
         <page name='Leetcode-819MostComWord'/>
@@ -45,5 +45,11 @@
         <page name='WorkingWithStrings'/>
         <page name='Leetcode58 - LengthOfLastWord'/>
         <page name='Leetcode1678-GoalParser'/>
+        <page name='Leetcode-20 Valid Parenthesis'/>
+        <page name='Leetcode 66 Plus One'/>
+        <page name='Leetcode 1984'/>
+        <page name='Leetcode 643 Max avg subarray'/>
+        <page name='Leetcode-2089 Target Indices after sorting'/>
+        <page name='Leetcode-1403'/>
     </pages>
 </playground>

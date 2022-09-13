@@ -223,9 +223,9 @@ class Solution7 {
             return [i, j]
     }
     map[n] = i // this is what populates our dictionary
-    }
+  }
     return []
-}
+  }
 }
 print(Solution7().twoSum2([3,2,4], 6))
 

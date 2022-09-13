@@ -43,7 +43,7 @@ func reverseLL(head: Node?) -> Node? {
         nxt = currentNode?.next          // this is a temporary variable to store
         print("nxt: ", nxt?.value ?? "")
        
-        currentNode?.next = prev // this is what points bach
+        currentNode?.next = prev // this is what points back
 
         prev = currentNode       // move ahead
         print("prev: ", prev?.value ?? -1)

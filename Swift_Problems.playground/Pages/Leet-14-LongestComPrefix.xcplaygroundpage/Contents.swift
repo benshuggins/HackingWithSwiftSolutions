@@ -24,22 +24,41 @@ var greeting = "Hello, playground"
 func longestCommonPrefix(_ strs: [String]) -> String {
     
    
-    guard let first = strs.first else {return ""}
-    print(first)
+  var result = strs[0]
     
-    let arrMap = Array(first).map {($0,1)}
-    print(arrMap)
-
-    for (index, item) in strs.enumerated() {
-        print("index: \(index), item: \(item)")
-        
+    for str in strs {
+       // print(str)
+        //while word doesn't have the same prefix
+        while !str.hasPrefix(result) { // every word has the prefix
+            //print("str: ", str)
+            print("result: ", result)
+            result.removeLast()
+        }
+        if result == "" {
+            return ""
+        }
     }
-    
-    return ""
+  
+    return result
     
 }
 
-//longestCommonPrefix(["flower","flow","flight"])
+longestCommonPrefix(["flower","flow","flight"])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // hasPrefix returns true

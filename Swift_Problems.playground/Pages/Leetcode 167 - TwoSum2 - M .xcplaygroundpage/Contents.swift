@@ -60,8 +60,8 @@ class Solution2 {
   
 }
 //print(Solution2().twoSum([2,3,4], 6)) // [1,3]
-print(Solution2().twoSum([-1,0], -1)) // [1,2]
-//print(Solution2().twoSum([2,7,11,15], 9)) // [1,2]
+//print(Solution2().twoSum([-1,0], -1)) // [1,2]
+print(Solution2().twoSum([2,7,11,15], 9)) // [1,2]
         
 
 

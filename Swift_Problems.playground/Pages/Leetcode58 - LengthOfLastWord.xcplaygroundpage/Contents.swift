@@ -11,19 +11,19 @@ import CoreFoundation
 
 // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&+++++========================================
 //
-//class Solution {
-//    let timefirst = CFAbsoluteTimeGetCurrent()
-//    func lengthOfLastWord(_ s: String) -> Int {
-//        guard s.count > 0 else { return 0}
-//        let lastWord = s.components(separatedBy: " ")
-//        let newWord = lastWord.filter { $0 != ""}
-//        let timeSecond = CFAbsoluteTimeGetCurrent()
-//        print("time: ", timeSecond - timefirst)
-//        return newWord.last!.count
-//
-//    }
-//}
-//print(Solution().lengthOfLastWord("   fly me   to   the moon  "))
+class Solution {
+    let timefirst = CFAbsoluteTimeGetCurrent()
+    func lengthOfLastWord(_ s: String) -> Int {
+        guard s.count > 0 else { return 0}
+        let lastWord = s.components(separatedBy: " ")
+        let newWord = lastWord.filter { $0 != ""}
+        let timeSecond = CFAbsoluteTimeGetCurrent()
+        print("time: ", timeSecond - timefirst)
+        return newWord.last!.count
+
+    }
+}
+print(Solution().lengthOfLastWord("   fly me   to   the moon  "))
 
 //"   fly me   to   the moon  "
 
