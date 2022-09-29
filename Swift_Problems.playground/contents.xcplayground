@@ -51,5 +51,12 @@
         <page name='Leetcode 643 Max avg subarray'/>
         <page name='Leetcode-2089 Target Indices after sorting'/>
         <page name='Leetcode-1403'/>
+        <page name='Leetcode-1051 height checker'/>
+        <page name='FInd and replace in string'/>
+        <page name='Happy Number'/>
+        <page name='Leetcode Sum of all subarrays'/>
+        <page name='Leetcode 2315 count asterisks'/>
+        <page name='Leetcode remove outer parenthesis'/>
+        <page name='Leetcode 1534 remove good triplets'/>
     </pages>
 </playground>
