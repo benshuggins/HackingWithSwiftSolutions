@@ -58,5 +58,7 @@
         <page name='Leetcode 2315 count asterisks'/>
         <page name='Leetcode remove outer parenthesis'/>
         <page name='Leetcode 1534 remove good triplets'/>
+        <page name='Leetcode - 567 Permutation in String'/>
+        <page name='Trees - HackingWSwift'/>
     </pages>
 </playground>
