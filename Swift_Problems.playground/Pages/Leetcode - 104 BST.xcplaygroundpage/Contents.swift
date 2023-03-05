@@ -52,10 +52,25 @@ extension TreeNode: CustomStringConvertible {
 		}
 		return result
 	}
-	
-	//func insert(value: Int, )
-	
-	
+}
+
+extension TreeNode {
+	public func insert(val: Int) {
+		
+		if val < self.val {
+			if let left = left {
+				left.insert(val: val)
+			} else {
+				left = TreeNode(val)
+			}
+		} else {
+			if let right = right {
+				right.insert(val: val)
+			} else {
+				right = TreeNode(val)
+		}
+	}
+} 
 }
  
 class Solution {
@@ -63,11 +78,10 @@ class Solution {
 		getDepth(1, root)
 	}
 	
-	
 	// we are going to pass in a count and a node to get our max depth.
 	func getDepth(_ i: Int,_ node: TreeNode?) -> Int {
 		// first lets guard against leafs, which are nodes without children which is why we use i-1
-		guard let node = node else { return i-1 }
+		guard let node = node else { return i - 1 }
 		// think of each side as separate we are adding 1 each time because each step or node increase to a BST has a height of 1 so we are just adding 1 each time.
 		let leftNodeHeight = getDepth(i+1, node.left)
 		let rightNodeHeight = getDepth(i+1, node.right)
@@ -80,5 +94,11 @@ class Solution {
 let tree = TreeNode(4)
 
 print(tree)
+tree.insert(val: 5)
 print("Here is the Height: ", Solution().maxDepth(tree))
+print(tree)
+// This is a very simple solution remember to possibly think of the class structure (small copy) of binary tree to to just be a value with a a left and right node that it points to and this is what comprises a large Binary tree just a bunch of smaller copies of value, left node, right node.
 
+// The max depth is just the height of the tree (vertically)
+
+// we pass in the root node of any bst and it traverses down the left and right sides separately and then returns the max value of which side is greater.
