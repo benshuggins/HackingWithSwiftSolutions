@@ -62,5 +62,6 @@
         <page name='Trees - HackingWSwift'/>
         <page name='Leetcode - 104 BST'/>
         <page name='Leetcode - 700 BST Search'/>
+        <page name='Leetcode 938 BST Range'/>
     </pages>
 </playground>
