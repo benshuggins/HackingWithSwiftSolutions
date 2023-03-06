@@ -63,5 +63,6 @@
         <page name='Leetcode - 104 BST'/>
         <page name='Leetcode - 700 BST Search'/>
         <page name='Leetcode 938 BST Range'/>
+        <page name='Leetcode - 108 Array to BST'/>
     </pages>
 </playground>

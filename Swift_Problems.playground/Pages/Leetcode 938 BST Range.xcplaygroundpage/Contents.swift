@@ -20,6 +20,12 @@ var greeting = "Hello, playground"
 
 // We need to traverse the tree
 
+// https://www.youtube.com/watch?v=ATocLyuTaKo
+// Inorder Traversal is: Left, Root, Right
+
+// PostOrder Traversal is used for delettion and is: left, right, root
+
+// Pre-order traversal is going through nodes but visiting current node first so Root, left, right
 
 public class TreeNode {
 	  public var val: Int
