@@ -64,5 +64,7 @@
         <page name='Leetcode - 700 BST Search'/>
         <page name='Leetcode 938 BST Range'/>
         <page name='Leetcode - 108 Array to BST'/>
+        <page name='Leetcode - 897 BST Increasing Order'/>
+        <page name='Leetcode - 94 BT Inorder Traversal'/>
     </pages>
 </playground>
