@@ -66,5 +66,6 @@
         <page name='Leetcode - 108 Array to BST'/>
         <page name='Leetcode - 897 BST Increasing Order'/>
         <page name='Leetcode - 94 BT Inorder Traversal'/>
+        <page name='Leetcode - 144 BT Preorder Traversal'/>
     </pages>
 </playground>

@@ -113,7 +113,7 @@ class Solution {
 			if stack.isEmpty { break }	// this means we are finished because everything we added to the stack
 			node = stack.popLast()!      // we poplast and add it because we have reached nil we go back up
 			result.append(node!.val)     // here we add the value we popped back up to because
-			node = node!.right			// we then move right 
+			node = node!.right			// we then move right
 		}
 
 		return result
