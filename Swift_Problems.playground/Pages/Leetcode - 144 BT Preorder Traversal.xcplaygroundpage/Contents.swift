@@ -4,6 +4,8 @@ import Foundation
 
 var greeting = "Hello, playground"
 
+//https://www.youtube.com/watch?v=QGWWGXzzXnY&t=153s&ab_channel=DailySwift
+
 // Preorder is root, left, right
 
 //144. Binary Tree Preorder Traversal
@@ -108,17 +110,37 @@ func preOrderIterative(_ root: TreeNode?) -> [Int] {
 	var result: [Int] = []
 	var stack: [TreeNode] = [root]   // assign the root to the stack if it exists
 	
-	while !stack.isEmpty {             // while the stack still contains values, once empty return result
-		let lastNode = stack.removeLast()
+	while !stack.isEmpty {             // while the stack still contains values
+		let lastNode = stack.removeLast()   // this part I dont get how does it know when it has reached nil? empty node?
 		result.append(lastNode.val)
 		
 		if let right = lastNode.right {     // why does right come before left in iterative solution this the 									stack not result
 			stack.append(right)
 		}
-		if let left = lastNode.left {
+		if let left = lastNode.left {        // left is last so that it is the first to be added to result at the top
 			stack.append(left)
 		}
 	}
+	return result
+}
+
+func inorderTraversalIterative(_ root: TreeNode?) -> [Int] {
+	var result = [Int]()
+	var stack = [TreeNode]()
+	var node = root
+
+	while true {
+		while node != nil {        // we go left as far as we can until we hit no node
+			stack.append(node!)	   // we are appending to the stack as we go even though we wont use
+			node = node!.left		// we traverse down the stack adding left to it
+		}
+
+		if stack.isEmpty { break }	// this means we are finished because everything we added to the stack
+		node = stack.popLast()!      // we poplast and add it because we have reached nil we go back up
+		result.append(node!.val)     // here we add the value we popped back up to because
+		node = node!.right			// we then move right
+	}
+
 	return result
 }
 

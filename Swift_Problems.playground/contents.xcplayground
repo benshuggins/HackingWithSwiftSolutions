@@ -67,5 +67,6 @@
         <page name='Leetcode - 897 BST Increasing Order'/>
         <page name='Leetcode - 94 BT Inorder Traversal'/>
         <page name='Leetcode - 144 BT Preorder Traversal'/>
+        <page name='Leetcode - 145 Bt PostOrder Traversal'/>
     </pages>
 </playground>
